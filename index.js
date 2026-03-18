@@ -115,25 +115,25 @@ bot.on('message', async (msg) => {
         case 'ℹ️ О клинике':
             await sendClinicInfo(bot, chatId);
             break;
-        case '📋 Сегодня':
+        case 'Сегодня':
             await handleToday(bot, msg);
             break;
-        case '📅 Завтра':
+        case 'Завтра':
             await handleTomorrow(bot, msg);
             break;
-        case '⏳ Ожидают':
+        case 'Ожидают':
             await handlePending(bot, msg);
             break;
-        case '📊 Статистика':
+        case 'Статистика':
             await handleStats(bot, msg);
             break;
-        case '👥 Пациенты':
+        case 'Пациенты':
             await handlePatients(bot, msg);
             break;
-        case '⚙️ Расписание':
+        case 'Расписание':
             await handleSchedule(bot, msg);
             break;
-        case '🏠 Главное меню':
+        case 'Главное меню':
             await bot.sendMessage(chatId, 'Главное меню:', config.MAIN_KEYBOARD);
             break;
         default:
